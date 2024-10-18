@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver anuncios</title>
+</head>
+<body>
+    <h1>Ver anuncios</h1>
+    <p>Has visto {{ current_user.ads_watched }} anuncios.</p>
+    <form action="{{ url_for('ad_viewed') }}" method="POST">
+        <button type="submit">Ver anuncio</button>
+    </form>
+</body>
+</html>
+
